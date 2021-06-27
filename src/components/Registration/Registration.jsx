@@ -17,7 +17,7 @@ function Registration() {
 
     // получаем авторизовался юзер или нет
     const [user] = useAuthState(auth)
-
+    console.log(user)
     //если не авторизован редиректим на главную страницу
     if(user) return <Redirect to={'/chat'} />
 
