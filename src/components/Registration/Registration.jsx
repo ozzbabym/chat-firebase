@@ -12,12 +12,11 @@ function Registration() {
     //далее регистрируемся в Гугле
     const login = async() => {
         const provider = new firebase.auth.GoogleAuthProvider()
-        await auth.signInWithPopup(provider)
+        let {user} = await auth.signInWithPopup(provider)
     }
 
     // получаем авторизовался юзер или нет
     const [user] = useAuthState(auth)
-    console.log(user)
     //если не авторизован редиректим на главную страницу
     if(user) return <Redirect to={'/chat'} />
 
