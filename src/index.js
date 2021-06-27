@@ -29,9 +29,9 @@ ReactDOM.render(
       auth,
       firestore
     }}>
-      <BrowserRouter>
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </Context.Provider>,
   document.getElementById('root')
 );
