@@ -11,8 +11,8 @@ function Registration() {
     const {auth} = useContext(Context) //Авторизован или нет
     //далее регистрируемся в Гугле
     const login = async() => {
-        const provider = new firebase.auth.GoogleAuthProvider()
-        let {user} = await auth.signInWithPopup(provider)
+        const provider = await new firebase.auth.GoogleAuthProvider()
+        await auth.signInWithPopup(provider)
     }
 
     // получаем авторизовался юзер или нет
