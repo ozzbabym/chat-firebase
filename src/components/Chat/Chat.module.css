@@ -1,0 +1,58 @@
+.chatWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.windowChat {
+    border: 1px solid black;
+    width: 80%;
+    height: 600px;
+    margin-top: 50px;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.input {
+    text-align: center;
+}
+
+.input input {
+    margin-top: 50px;
+    max-width: 800px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.input span {
+    font-size: 30px;
+    margin-left: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background: #4682B4;
+    margin-top: 50px;
+    transition: all 0.5s;
+    color: white;
+}
+
+.input span:hover {
+    opacity: 0.5;
+}
+
+.message {
+    border: 1px solid black;
+    min-width: 100px;
+    max-width: 500px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.message img {
+    border-radius: 15px;
+    width: 50px;
+}
