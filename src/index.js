@@ -5,7 +5,7 @@ import App from './App';
 import firebase from 'firebase'
 import 'firebase/firestore'
 import 'firebase/auth'
-import {BrowserRouter} from 'react-router-dom'
+import {HashRouter} from 'react-router-dom'
 
 
 //инициализируем firebase
